@@ -1,7 +1,7 @@
 [build]
   base = "3DUniverse"
   command = "npm run build"
-  publish = "3DUniverse/dist"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
