@@ -22,6 +22,9 @@ const HUD = () => {
   function LinkToHomePage() {
     window.location.href = "https://rayuchoeng-profolio-website.netlify.app/";
   }
+
+  
+ 
   
   return (
     <div className="fixed inset-0 pointer-events-none z-10">
@@ -29,7 +32,7 @@ const HUD = () => {
       <div className="absolute top-4 left-4 right-4 flex justify-between items-start pointer-events-auto">
         {/* Logo/Title */}
         <div className="hud-panel" onClick={() => LinkToHomePage()}>
-          <h1 className="text-xl font-bold cosmic-text">Home </h1>
+          <h1 className="text-xl font-bold cosmic-text">Back to Home </h1>
           <p className="text-white/60 text-sm">Solar System Explorer</p>
         </div>
         
