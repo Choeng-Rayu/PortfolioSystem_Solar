@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import useUniverseStore from '../store/universeStore';
 import Navigation from './Navigation';
+import { NavLink } from 'react-router-dom';
 
 const HUD = () => {
   const {
@@ -18,14 +19,17 @@ const HUD = () => {
   const [showSettings, setShowSettings] = useState(false);
   
   if (!showHUD) return null;
+  function LinkToHomePage() {
+    window.location.href = "https://rayuchoeng-profolio-website.netlify.app/";
+  }
   
   return (
     <div className="fixed inset-0 pointer-events-none z-10">
       {/* Top Bar */}
       <div className="absolute top-4 left-4 right-4 flex justify-between items-start pointer-events-auto">
         {/* Logo/Title */}
-        <div className="hud-panel">
-          <h1 className="text-xl font-bold cosmic-text">3D Universe</h1>
+        <div className="hud-panel" onClick={() => LinkToHomePage()}>
+          <h1 className="text-xl font-bold cosmic-text">Home </h1>
           <p className="text-white/60 text-sm">Solar System Explorer</p>
         </div>
         
