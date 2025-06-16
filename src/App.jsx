@@ -4,12 +4,14 @@ import HUD from './components/HUD';
 import LoadingScreen from './components/LoadingScreen';
 import SoundSystem from './components/SoundSystem';
 import useUniverseStore from './store/universeStore';
+import PointerEffect from './PointerEffect';
 
 function App() {
   const { showHUD } = useUniverseStore();
 
   return (
     <div className="w-full h-screen bg-black overflow-hidden">
+      <PointerEffect />
       <Suspense fallback={<LoadingScreen />}>
         <UniverseCanvas />
         {showHUD && <HUD />}
