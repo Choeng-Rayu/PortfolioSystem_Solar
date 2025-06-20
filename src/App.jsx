@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="w-full h-screen bg-black overflow-hidden">
-      <PointerEffect />
+      <PointerEffect /> 
       <Suspense fallback={<LoadingScreen />}>
         <UniverseCanvas />
         {showHUD && <HUD />}

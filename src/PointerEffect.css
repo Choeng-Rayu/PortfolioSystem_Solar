@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Default background color */
+    /* Remove overflow: hidden to allow scrolling */
+  }
+  
+  .App {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgb(205, 200, 200);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #pointer-effect {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(41, 68, 76, 0.932) 0%, transparent 70%);
+    pointer-events: none; /* Prevent the pointer effect from blocking interactions */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it appears above other elements */
+  }
